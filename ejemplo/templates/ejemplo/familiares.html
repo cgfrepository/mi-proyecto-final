@@ -1,3 +1,6 @@
+{% extends 'ejemplo/base.html' %}
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,3 +21,19 @@
     
 </body>
 </html>
+-->
+
+
+{% block titulo%} 
+    Lista de todos mis Familiares 
+{% endblock %}
+
+{% block contenido %}
+
+  {% for familiar in lista_familiares %}
+      <ul>
+          <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}}</li>
+      </ul>
+  {% endfor %}
+
+{% endblock %}
