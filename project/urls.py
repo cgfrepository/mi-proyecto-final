@@ -26,7 +26,7 @@ urlpatterns = [
     path('mostrar-notas', index3),
     path('imc/<peso>/<altura>/', imc),
     path('mi-familia/', monstrar_familiares),
-    path('blog/', blog_index),
+    path('blog/', blog_index), #sSe menciona que no funciona esta linea, pero si lo hace sino no mostraria el template avanzado.
     path('mi-familia/buscar', BuscarFamiliar.as_view()),
 ]
 
